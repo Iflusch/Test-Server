@@ -34,7 +34,7 @@ app.post('/midtrans-notification', (req, res) => {
 });
 
 // Jalankan server di port 3000
-const port = 3000;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
-    console.log(`🚀 Server berjalan di http://localhost:${port}`);
+    console.log(`Server running on port ${PORT}`);
 });
